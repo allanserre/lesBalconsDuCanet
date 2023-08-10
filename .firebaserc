@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "lesbalconsducanet": {
+      "hosting": {
+        "lesBalconsDuCanet": [
+          "lesbalconsducanet"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "lesbalconsducanet"
+  }
+}

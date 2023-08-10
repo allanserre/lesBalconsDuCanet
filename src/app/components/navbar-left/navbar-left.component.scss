@@ -1,0 +1,40 @@
+.left-navbar-container {
+  position: fixed;
+  top: 0;
+  width: 100px;
+  height: 100vh;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .selected {
+    background-color: black;
+    transition: 550ms;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &:hover {
+      > p {
+        color: black;
+      }
+    }
+    > div {
+      cursor: pointer;
+      width: 10px;
+      outline: 1px solid black;
+      height: 10px;
+      border-radius: 50%;
+    }
+    > p {
+      transition: 500ms;
+      padding-left: 20px;
+      text-align: center;
+      color: transparent;
+    }
+  }
+}
