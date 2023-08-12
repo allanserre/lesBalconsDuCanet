@@ -1,0 +1,16 @@
+.main-bc {
+  min-height: 120vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.main-img-container {
+  background-image: url("../../../assets/images/main-bc-homepage.jpg");
+  height: 120vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  z-index: 1;
+}

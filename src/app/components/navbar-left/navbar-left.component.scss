@@ -9,7 +9,7 @@
   justify-content: center;
 
   .selected {
-    background-color: black;
+    background-color: white;
     transition: 550ms;
   }
 
@@ -20,13 +20,13 @@
 
     &:hover {
       > p {
-        color: black;
+        color: white;
       }
     }
     > div {
       cursor: pointer;
       width: 10px;
-      outline: 1px solid black;
+      outline: 1px solid white;
       height: 10px;
       border-radius: 50%;
     }

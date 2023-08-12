@@ -8,12 +8,14 @@ import { environment } from '../environments/environment';
 import { provideAnalytics, getAnalytics, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';
 import { HeaderComponent } from './components/header/header.component';
 import { NavbarLeftComponent } from './components/navbar-left/navbar-left.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavbarLeftComponent
+    NavbarLeftComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
