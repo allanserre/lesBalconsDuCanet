@@ -1,57 +1,89 @@
 @import "../../var.scss";
 
 .header-container {
-  background-color: red;
-  padding: 20px 50px 20px 50px;
+  padding: 20px 0;
   height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  left: 0;
+  width: 100%;
+  top: 0;
+  color: white;
+  position: fixed;
+  z-index: 1;
 
-  .title {
-    font-size: 35px;
-  }
-
-  .hamb-btn {
+  .top-app-bar {
+    justify-content: space-between;
     align-items: center;
     display: flex;
-    height: $btn-size;
-    justify-content: center;
-    position: relative;
-    width: $btn-size;
+    margin-left: 2rem;
+    margin-right: 2rem;
 
-    &:before {
+    .button-navbar {
       border: $btn-border solid white;
-      content: "";
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transition: transform 0.4s ease-out, border-color 0.3s;
-      width: 100%;
+      transition: all ease-out 500ms;
+      display: flex;
+      height: $btn-size;
+      width: $btn-size;
+
+      .text-box {
+        display: none;
+      }
+
+      .text-open {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+      }
+    }
+    .title {
+      font-size: 35px;
+      color: white;
     }
 
-    .hamb-btn__wr {
+    .button-open {
+      width: 600px;
+    }
+
+    .hamb-btn {
       align-items: center;
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      grid-template-rows: repeat(3, minmax(0, 1fr));
-      height: 1.5rem;
-      justify-items: center;
-      transition: transform 0.4s ease-out;
-      width: 1.5rem;
+      display: flex;
+      height: $btn-size;
+      justify-content: center;
+      position: relative;
+      width: $btn-size;
 
-      .hamb-btn__square {
-        background-color: black;
-        display: inline-block;
-        height: 0.25rem;
-        position: relative;
-        transition: transform 0.4s ease-out, background-color 0.3s;
-        width: 0.25rem;
-        z-index: 1;
+      &:before {
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: transform 0.4s ease-out, border-color 0.3s;
+        width: 100%;
+      }
 
-        &:not(.-middle) {
-          background-color: white;
+      .hamb-btn__wr {
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(3, minmax(0, 1fr));
+        height: 1.5rem;
+        justify-items: center;
+        transition: transform 0.4s ease-out;
+        width: 1.5rem;
+
+        .hamb-btn__square {
+          background-color: black;
+          display: inline-block;
+          height: 0.25rem;
+          position: relative;
+          transition: transform 0.4s ease-out, background-color 0.3s;
+          width: 0.25rem;
+          z-index: 1;
+
+          &:not(.-middle) {
+            background-color: white;
+          }
         }
       }
     }

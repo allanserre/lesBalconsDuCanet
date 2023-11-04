@@ -1,23 +1,31 @@
 <div class="header-container">
-  <div class="title">Les Balcons du Canet</div>
-  <div class="button-navbar">
-    <button
-      tabindex="0"
-      aria-label="Menu"
-      name="Menu"
-      class="hamb-btn white-theme"
-    >
-      <span class="hamb-btn__wr"
-        ><span class="hamb-btn__square -laterals"></span
-        ><span class="hamb-btn__square -laterals"></span
-        ><span class="hamb-btn__square -laterals"></span
-        ><span class="hamb-btn__square -laterals"></span
-        ><span class="hamb-btn__square -middle"></span
-        ><span class="hamb-btn__square -laterals"></span
-        ><span class="hamb-btn__square -laterals"></span
-        ><span class="hamb-btn__square -laterals"></span
-        ><span class="hamb-btn__square -laterals"></span
-      ></span>
-    </button>
+  <div class="top-app-bar">
+    <div class="title">Les Balcons du Canet</div>
+    <div class="button-navbar" [class.button-open]="isOpen">
+      <button
+        tabindex="0"
+        aria-label="Menu"
+        name="Menu"
+        (click)="switchButton($event)"
+        class="hamb-btn white-theme"
+      >
+        <span class="hamb-btn__wr"
+          ><span class="hamb-btn__square -laterals"></span
+          ><span class="hamb-btn__square -laterals"></span
+          ><span class="hamb-btn__square -laterals"></span
+          ><span class="hamb-btn__square -laterals"></span
+          ><span class="hamb-btn__square -middle"></span
+          ><span class="hamb-btn__square -laterals"></span
+          ><span class="hamb-btn__square -laterals"></span
+          ><span class="hamb-btn__square -laterals"></span
+          ><span class="hamb-btn__square -laterals"></span
+        ></span>
+      </button>
+      <div class="text-box" [class.text-open]="isOpen">
+        <p>Menu</p>
+        <p>Contact</p>
+        <p>Agenda</p>
+      </div>
+    </div>
   </div>
 </div>
