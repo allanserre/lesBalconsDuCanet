@@ -13,24 +13,26 @@
     transition: 550ms;
   }
 
-  > div {
+  >div {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 
     &:hover {
-      > p {
+      >p {
         color: white;
       }
     }
-    > div {
+
+    >div {
       cursor: pointer;
       width: 10px;
       outline: 1px solid white;
       height: 10px;
       border-radius: 50%;
     }
-    > p {
+
+    >p {
       transition: 500ms;
       padding-left: 20px;
       text-align: center;

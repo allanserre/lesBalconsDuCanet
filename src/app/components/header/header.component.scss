@@ -1,24 +1,25 @@
 @import "../../var.scss";
 
 .header-container {
-  padding: 20px 0;
   height: 70px;
   left: 0;
   width: 100%;
   top: 0;
-  color: white;
+  color: var(--main-text-color);
   position: fixed;
   z-index: 1;
 
+
+
   .top-app-bar {
+    transition: all .2s ease 0s;
     justify-content: space-between;
     align-items: center;
     display: flex;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    padding: 20px;
 
     .button-navbar {
-      border: $btn-border solid white;
+      border: $btn-border solid var(--main-text-color);
       transition: all ease-out 500ms;
       display: flex;
       height: $btn-size;
@@ -36,9 +37,10 @@
       }
     }
     .title {
+      font-family: "Botanic";
       font-size: 35px;
-      color: white;
     }
+
 
     .button-open {
       width: 600px;
@@ -73,7 +75,7 @@
         width: 1.5rem;
 
         .hamb-btn__square {
-          background-color: black;
+          background-color: green;
           display: inline-block;
           height: 0.25rem;
           position: relative;
@@ -85,6 +87,21 @@
             background-color: white;
           }
         }
+      }
+    }
+  }
+
+  .bar-colored {
+    background-color: white;
+    color: var(--secondary-text-color);
+    padding: 8px 20px 8px 20px;
+    .button-navbar {
+      border: $btn-border solid var(--secondary-text-color);
+    }
+
+    .hamb-btn__square {
+      &:not(.-middle) {
+        background-color: black !important;
       }
     }
   }

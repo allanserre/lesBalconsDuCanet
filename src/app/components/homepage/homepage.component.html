@@ -1,12 +1,12 @@
 <section class="main-bc">
   <div class="main-img-container"></div>
 </section>
-<section>
-  <app-picture-card> </app-picture-card>
-  <app-picture-card> </app-picture-card>
-  <app-picture-card> </app-picture-card>
+<section class="side-img-container">
+  <app-picture-card imageLink="/assets/images/chambre.jpg"> </app-picture-card>
+  <app-picture-card imageLink="/assets/images/balcon.jpg"> </app-picture-card>
+  <app-picture-card imageLink="/assets/images/tout-vert.jpg"> </app-picture-card>
 </section>
 <section>
-  <app-carousel (imageList]=""></app-carousel>
+  <app-carousel [imageList]='imageList'></app-carousel>
 </section>
 <app-navbar-left></app-navbar-left>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar-left',
@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class NavbarLeftComponent {
 
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(event:any){
+    console.log(window.scrollY)
+  }
 }

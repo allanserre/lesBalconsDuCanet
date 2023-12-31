@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent {
-  @Input() imageList = []
-  
+  @Input() imageList : Array<string> = []
+
  }

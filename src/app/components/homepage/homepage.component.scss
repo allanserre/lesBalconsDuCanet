@@ -5,8 +5,12 @@
   width: 100%;
 }
 
+.side-img-container{
+  padding: 0px 40px;
+}
+
 .main-img-container {
-  background-image: url("https://placehold.co/2000x1400");
+  background-image: url("/assets/images/main-bc-homepage-2.jpg");
   height: 120vh;
   background-size: cover;
   background-position: center;

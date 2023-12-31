@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root{
+  --main-text-color : white;
+  --secondary-text-color : black;
+}
+
 body {
   margin: 0;
 }
@@ -22,4 +27,11 @@ button {
   padding: 0;
   -webkit-user-select: none;
   user-select: none;
+}
+
+@font-face {
+  font-family: 'Botanic';
+  src: url('assets/fonts/Botanic/Botanic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
