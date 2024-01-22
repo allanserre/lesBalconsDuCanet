@@ -1,5 +1,6 @@
 .image-container {
   position: relative;
+
   img {
     max-height: 500px;
     border-radius: 30px;
@@ -9,7 +10,6 @@
   }
 
   .image-title {
-    color: white;
     position: absolute;
     bottom: 22px;
     left: 22px;

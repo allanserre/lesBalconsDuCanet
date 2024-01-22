@@ -1,18 +1,6 @@
 <div class="left-navbar-container">
-  <div>
-    <div></div>
-    <p>TEST</p>
-  </div>
-  <div>
-    <div></div>
-    <p>TEST</p>
-  </div>
-  <div>
-    <div></div>
-    <p>TEST</p>
-  </div>
-  <div>
-    <div></div>
-    <p>TEST</p>
+  <div *ngFor="let section of sections"  (click)="onCellClick(section)">
+      <div></div>
+      <p>{{ section }}</p>
   </div>
 </div>

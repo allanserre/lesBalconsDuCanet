@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class PictureCardComponent {
   @Input() imageLink = "https://placehold.co/400x600";
   @Input() imageText = "test"
+  @Input() color = "white"
 }

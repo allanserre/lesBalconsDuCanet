@@ -12,6 +12,7 @@ import { NavbarLeftComponent } from './components/navbar-left/navbar-left.compon
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { PictureCardComponent } from './components/picture-card/picture-card.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { ParralaxTopComponent } from './components/parralax-top/parralax-top.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     NavbarLeftComponent,
     HomepageComponent,
     PictureCardComponent,
-    CarouselComponent
+    CarouselComponent,
+    ParralaxTopComponent
   ],
   imports: [
     BrowserModule,

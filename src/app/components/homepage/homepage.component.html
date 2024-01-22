@@ -1,10 +1,48 @@
 <section class="main-bc">
-  <div class="main-img-container"></div>
+  <app-parralax-top></app-parralax-top>
 </section>
 <section class="side-img-container">
-  <app-picture-card imageLink="/assets/images/chambre.jpg"> </app-picture-card>
-  <app-picture-card imageLink="/assets/images/balcon.jpg"> </app-picture-card>
-  <app-picture-card imageLink="/assets/images/tout-vert.jpg"> </app-picture-card>
+  <div class="picture-section">
+    <app-picture-card id="image1" imageText="Verdure" imageLink="/assets/images/tout-vert.jpg"> </app-picture-card>
+    <div class="text-wrapper">
+      <div class="text-container">
+        <p class="head-title">Bienvenue dans notre gîte</p>
+        <p>Oubliez vos soucis dans ce logement spacieux et serein fait pour 4 adultes ou une famille. Vous y trouverez
+          tout le nécessaire de base. Vous profiterez d’un espace cosy, au 1er étage de notre maison , accès
+          indépendant.
+          Côté extérieur, vous serez au cœur de la nature, la vue sur une petite vallée est superbe. Un terrain
+          privatif, paysagé, plat avec mobilier d’extérieur vous plongera dans la verdure et la sérénité et vous
+          permettra de vous relaxer et prendre vos repas.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="second-section">
+    <app-picture-card imageLink="/assets/images/vue-maison.jpg"> </app-picture-card>
+    <app-picture-card imageText="Table d'extérieure" imageLink="/assets/images/pique-nique.jpg"> </app-picture-card>
+    <app-picture-card imageText="Salon de jardin" imageLink="/assets/images/vue-bas.jpg"> </app-picture-card>
+  </div>
+  <div class="text-section">
+    <div class="text-wrapper">
+      <div class="text-container">
+        <p class="head-title">Où dormirez-vous ?</p>
+        <p>Le gîte de 50 m2 se compose de 2 chambres :
+          La chambre Terracota vous accueille avec un lit double en 140cms. Portant et dépose valise, plaids
+          supplémentaires à
+          disposition.
+          La chambre bleue dispose d’un lit Qeen Size en 160 ou version 2 lits individuels de 80cms chacun.
+          1 banc dépose valise. Une commode de rangement. 4 serviettes de plages.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="picture-section">
+    <app-picture-card id="image1" imageLink="/assets/images/chambre-rouge-longue.jpg"> </app-picture-card>
+  </div>
+  <div class="picture-section">
+    <app-picture-card id="image1" imageLink="/assets/images/lit-bleu-colle.jpg"> </app-picture-card>
+    <app-picture-card id="image1" imageLink="/assets/images/lit-bleu-decolle.jpg"> </app-picture-card>
+  </div>
 </section>
 <section>
   <app-carousel [imageList]='imageList'></app-carousel>

@@ -1,8 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
-:root{
-  --main-text-color : white;
-  --secondary-text-color : black;
+:root {
+  --main-text-color: white;
+  --secondary-text-color: black;
+  background-color: #BF8770;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
