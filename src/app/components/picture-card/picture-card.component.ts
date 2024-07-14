@@ -9,4 +9,6 @@ export class PictureCardComponent {
   @Input() imageLink = "https://placehold.co/400x600";
   @Input() imageText = "test"
   @Input() color = "white"
+  @Input() maxHeight = "500"
+  @Input() maxWidth = "1000"
 }
