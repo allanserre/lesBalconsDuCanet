@@ -1,9 +1,9 @@
 import { Component, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-parralax-top',
-  templateUrl: './parralax-top.component.html',
-  styleUrls: ['./parralax-top.component.scss']
+    selector: 'app-parralax-top',
+    templateUrl: './parralax-top.component.html',
+    styleUrls: ['./parralax-top.component.scss'],
 })
 export class ParralaxTopComponent {
 
