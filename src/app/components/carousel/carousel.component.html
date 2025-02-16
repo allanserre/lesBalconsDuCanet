@@ -1,7 +1,7 @@
 <div class="carousel-container">
-  <ng-container *ngFor="let image of imageList">
+  @for (image of imageList; track image) {
     <div class="picture-container">
       <app-picture-card [imageLink]="image"> </app-picture-card>
     </div>
-  </ng-container>
+  }
 </div>

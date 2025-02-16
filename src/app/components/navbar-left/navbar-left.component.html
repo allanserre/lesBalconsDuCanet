@@ -1,6 +1,8 @@
 <div class="left-navbar-container">
-  <div *ngFor="let section of sections"  (click)="onCellClick(section)">
+  @for (section of sections; track section) {
+    <div  (click)="onCellClick(section)">
       <div></div>
       <p>{{ section }}</p>
-  </div>
+    </div>
+  }
 </div>
