@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
     selector: 'app-picture-card',
@@ -6,9 +6,9 @@ import { Component, Input } from '@angular/core';
     styleUrls: ['./picture-card.component.scss'],
 })
 export class PictureCardComponent {
-  @Input() imageLink = "https://placehold.co/400x600";
-  @Input() imageText = "test"
-  @Input() color = "white"
-  @Input() maxHeight = "500"
-  @Input() maxWidth = "1000"
+  readonly imageLink = input("https://placehold.co/400x600");
+  readonly imageText = input("test");
+  readonly color = input("white");
+  readonly maxHeight = input("500");
+  readonly maxWidth = input("1000");
 }

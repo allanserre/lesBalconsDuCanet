@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
     selector: 'app-carousel',
@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
     styleUrls: ['./carousel.component.scss'],
 })
 export class CarouselComponent {
-  @Input() imageList : Array<string> = []
+  readonly imageList = input<Array<string>>([]);
 
  }

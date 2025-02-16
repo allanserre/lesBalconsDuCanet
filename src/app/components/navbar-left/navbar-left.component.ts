@@ -1,5 +1,5 @@
 import { ViewportScroller } from '@angular/common';
-import { Component, HostListener, Input, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, input } from '@angular/core';
 
 @Component({
     selector: 'app-navbar-left',
@@ -8,7 +8,7 @@ import { Component, HostListener, Input, OnInit } from '@angular/core';
 })
 export class NavbarLeftComponent {
 
-  @Input() sections = ["image1", "image2", "image3"]
+  readonly sections = input(["image1", "image2", "image3"]);
 
   constructor(private scroller: ViewportScroller) { }
 
