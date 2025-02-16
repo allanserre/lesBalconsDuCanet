@@ -1,86 +1,129 @@
 <section class="main-bc">
   <app-parralax-top></app-parralax-top>
 </section>
-<section class="side-img-container">
-  <section class="page-section">
-    <section class="picture-section ">
-      <app-picture-card id="image1" imageText="Verdure" imageLink="/assets/images/tout-vert.jpg"> </app-picture-card>
+<app-navbar-left></app-navbar-left>
+<ng-container [ngTemplateOutlet]="mobile"></ng-container>
+
+<ng-template #mobile></ng-template>
+<ng-template #desktop>
+  <section class="side-img-container">
+    <section class="page-section">
+      <section class="picture-section">
+        <app-picture-card
+          id="image1"
+          imageText="Verdure"
+          imageLink="/assets/images/tout-vert.jpg"
+        >
+        </app-picture-card>
+        <div class="text-wrapper">
+          <div class="text-container">
+            <p class="head-title">Bienvenue dans notre gîte</p>
+            <p>
+              Oubliez vos soucis dans ce logement spacieux et serein fait pour 4
+              adultes ou une famille. Vous y trouverez tout le nécessaire de
+              base. Vous profiterez d’un espace cosy, au 1er étage de notre
+              maison , accès indépendant. Côté extérieur, vous serez au cœur de
+              la nature, la vue sur une petite vallée est superbe. Un terrain
+              privatif, paysagé, plat avec mobilier d’extérieur vous plongera
+              dans la verdure et la sérénité et vous permettra de vous relaxer
+              et prendre vos repas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="row-section">
+        <app-picture-card imageLink="/assets/images/vue-maison.jpg">
+        </app-picture-card>
+        <app-picture-card
+          imageText="Table d'extérieure"
+          imageLink="/assets/images/pique-nique.jpg"
+        >
+        </app-picture-card>
+        <app-picture-card
+          imageText="Salon de jardin"
+          imageLink="/assets/images/vue-bas.jpg"
+        >
+        </app-picture-card>
+      </section>
+    </section>
+    <section class="text-section">
       <div class="text-wrapper">
         <div class="text-container">
-          <p class="head-title">Bienvenue dans notre gîte</p>
-          <p>Oubliez vos soucis dans ce logement spacieux et serein fait pour 4 adultes ou une famille. Vous y trouverez
-            tout le nécessaire de base. Vous profiterez d’un espace cosy, au 1er étage de notre maison , accès
-            indépendant.
-            Côté extérieur, vous serez au cœur de la nature, la vue sur une petite vallée est superbe. Un terrain
-            privatif, paysagé, plat avec mobilier d’extérieur vous plongera dans la verdure et la sérénité et vous
-            permettra de vous relaxer et prendre vos repas.
+          <p class="head-title">Où dormirez-vous ?</p>
+          <p>
+            Le gîte de 50 m2 se compose de 2 chambres : La chambre Terracota
+            vous accueille avec un lit double en 140cms. Portant et dépose
+            valise, plaids supplémentaires à disposition. La chambre bleue
+            dispose d’un lit Qeen Size en 160 ou version 2 lits individuels de
+            80cms chacun. 1 banc dépose valise. Une commode de rangement. 4
+            serviettes de plages.
           </p>
         </div>
       </div>
     </section>
-    <section class="row-section">
-      <app-picture-card imageLink="/assets/images/vue-maison.jpg"> </app-picture-card>
-      <app-picture-card imageText="Table d'extérieure" imageLink="/assets/images/pique-nique.jpg"> </app-picture-card>
-      <app-picture-card imageText="Salon de jardin" imageLink="/assets/images/vue-bas.jpg"> </app-picture-card>
+    <section class="picture-section">
+      <div class="absolute-pictures">
+        <div class="img-first">
+          <app-picture-card
+            maxHeight="400"
+            imageText="Chambre rouge"
+            id="image1"
+            imageLink="/assets/images/chambre-terra-1.jpg"
+          >
+          </app-picture-card>
+        </div>
+        <div class="img-second">
+          <app-picture-card
+            maxHeight="400"
+            imageText="Chambre bleue"
+            id="image1"
+            imageLink="/assets/images/chambre-bleu-1.jpg"
+          >
+          </app-picture-card>
+        </div>
+        <div class="img-third">
+          <app-picture-card
+            maxHeight="400"
+            imageText="Chambre bleue 'lit séparé'"
+            id="image1"
+            imageLink="/assets/images/lit-bleu-decolle.jpg"
+          >
+          </app-picture-card>
+        </div>
+      </div>
+    </section>
+    <section class="picture-section">
+      <div class="row-section">
+        <app-picture-card
+          id="image1"
+          imageText="Table à manger"
+          imageLink="/assets/images/table-cuisine-1.jpg"
+        >
+        </app-picture-card>
+        <app-picture-card
+          id="image1"
+          imageText="Cuisine"
+          imageLink="/assets/images/coin-cuisine-1.jpg"
+        >
+        </app-picture-card>
+      </div>
+      <div class="text-wrapper">
+        <div class="text-container">
+          <p class="head-title">Où mangerez-vous ?</p>
+          <p>
+            L’espace cuisine vous propose une gazinière avec four électrique, 3
+            gaz et une plaque électrique. Une petite machine à laver le linge à
+            tambour. Tout le nécessaire pour une cuisine de base et vaisselle
+            pour 4 personnes. Vous y trouverez plusieurs sortes de thé bio, café
+            bio pour cafetière classique, filtres, chocolat en poudre bio.
+            L’espace repas vous accueille autour d’une table ronde pour 4
+            personnes. Le salon est composé d’un canapé avec retour, coin
+            bibliothèque, jeux de société, livres, bandes dessinées, quelques
+            jouets enfant, une télévision écran 50 pouces. Prospectus à
+            disposition sur les sites de visites à proximité.
+          </p>
+        </div>
+      </div>
     </section>
   </section>
-  <section class="text-section">
-    <div class="text-wrapper">
-      <div class="text-container">
-        <p class="head-title">Où dormirez-vous ?</p>
-        <p>Le gîte de 50 m2 se compose de 2 chambres :
-          La chambre Terracota vous accueille avec un lit double en 140cms. Portant et dépose valise, plaids
-          supplémentaires à
-          disposition.
-          La chambre bleue dispose d’un lit Qeen Size en 160 ou version 2 lits individuels de 80cms chacun.
-          1 banc dépose valise. Une commode de rangement. 4 serviettes de plages.
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="picture-section">
-    <div class="absolute-pictures">
-      <div class="img-first">
-        <app-picture-card maxHeight="400" imageText="Chambre rouge" id="image1"
-          imageLink="/assets/images/chambre-terra-1.jpg">
-        </app-picture-card>
-      </div>
-      <div class="img-second">
-        <app-picture-card maxHeight="400" imageText="Chambre bleue" id="image1"
-          imageLink="/assets/images/chambre-bleu-1.jpg">
-        </app-picture-card>
-      </div>
-      <div class="img-third">
-        <app-picture-card maxHeight="400" imageText="Chambre bleue 'lit séparé'" id="image1"
-          imageLink="/assets/images/lit-bleu-decolle.jpg">
-        </app-picture-card>
-      </div>
-    </div>
-  </section>
-  <section class="picture-section">
-    <div class="row-section">
-      <app-picture-card id="image1" imageText="Table à manger" imageLink="/assets/images/table-cuisine-1.jpg">
-      </app-picture-card>
-      <app-picture-card id="image1" imageText="Cuisine" imageLink="/assets/images/coin-cuisine-1.jpg">
-      </app-picture-card>
-    </div>
-    <div class="text-wrapper">
-      <div class="text-container">
-        <p class="head-title">Où mangerez-vous ?</p>
-        <p>L’espace cuisine vous propose une gazinière avec four électrique, 3 gaz et une plaque électrique. Une petite
-          machine à
-          laver le linge à tambour. Tout le nécessaire pour une cuisine de base et vaisselle pour 4 personnes. Vous y
-          trouverez
-          plusieurs sortes de thé bio, café bio pour cafetière classique, filtres, chocolat en poudre bio.
-          L’espace repas vous accueille autour d’une table ronde pour 4 personnes.
-          Le salon est composé d’un canapé avec retour, coin bibliothèque, jeux de société, livres, bandes dessinées,
-          quelques
-          jouets enfant, une télévision écran 50 pouces. Prospectus à disposition sur les sites de visites à proximité.
-
-        </p>
-      </div>
-    </div>
-  </section>
-</section>
-
-<app-navbar-left></app-navbar-left>
+</ng-template>
