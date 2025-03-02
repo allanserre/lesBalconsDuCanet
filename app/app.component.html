@@ -1,0 +1,7 @@
+<div id="content" (mousemove)="onMouseMove($event)">
+  <app-header></app-header>
+  <div #scroller (scroll)="onWindowScroll($event)" class="scroll-wrapper">
+    <router-outlet> </router-outlet>
+    <div class="cursor-dot"></div>
+  </div>
+</div>
