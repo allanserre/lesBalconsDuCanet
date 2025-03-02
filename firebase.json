@@ -1,9 +1,0 @@
-{
-  "hosting": [
-    {
-      "target": "lesBalconsDuCanet",
-      "source": ".",
-      "frameworksBackend": {}
-    }
-  ]
-}
