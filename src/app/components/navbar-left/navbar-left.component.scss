@@ -3,7 +3,8 @@
   top: 0;
   width: 100px;
   height: 100vh;
-  padding-left: 25px;
+  z-index: 9999;
+  padding-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,13 +24,20 @@
         color: white;
       }
     }
+
     > div {
       cursor: pointer;
       width: 10px;
-      outline: 1px solid white;
+      outline: 2px solid brown;
       height: 10px;
       border-radius: 50%;
+      transition: all ease 0.25s;
+
+      &:hover {
+        background-color: brown;
+      }
     }
+
     > p {
       transition: 500ms;
       padding-left: 20px;

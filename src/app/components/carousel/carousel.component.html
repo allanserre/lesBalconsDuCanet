@@ -1,0 +1,7 @@
+<div class="carousel-container">
+  @for (image of imageList(); track image) {
+    <div class="picture-container">
+      <app-picture-card [imageLink]="image"> </app-picture-card>
+    </div>
+  }
+</div>

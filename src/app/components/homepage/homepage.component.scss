@@ -1,16 +1,93 @@
+$space-between-section: 20px;
+
+.head-title {
+  font-family: "Botanic";
+  font-weight: bold;
+  color: #424b31;
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+
 .main-bc {
-  min-height: 120vh;
-  overflow: hidden;
   position: relative;
   width: 100%;
 }
 
-.main-img-container {
-  background-image: url("../../../assets/images/main-bc-homepage.jpg");
-  height: 120vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: block;
-  z-index: 1;
+.side-img-container-mobile {
+  padding: $space-between-section 20px;
+
+  .picture-section {
+    margin-bottom: $space-between-section;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+    .centered-picture {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.side-img-container {
+  padding: $space-between-section 40px;
+
+  .page-section {
+    min-height: 100vh;
+    margin-bottom: 200px;
+  }
+
+  .picture-section {
+    margin-bottom: $space-between-section;
+    gap: 24px;
+    display: flex;
+  }
+
+  .absolute-pictures {
+    position: relative;
+    height: 1100px;
+
+    .img-first {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .img-second {
+      position: absolute;
+      top: 100px;
+      left: 800px;
+    }
+
+    .img-third {
+      position: absolute;
+      top: 550px;
+      left: 250px;
+    }
+  }
+}
+
+.text-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.text-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  .text-container {
+    width: 100%;
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 30px;
+  }
+}
+
+.row-section {
+  flex-wrap: wrap;
+  display: flex;
+  column-gap: 40px;
 }

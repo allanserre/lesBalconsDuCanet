@@ -1,18 +1,9 @@
 <div class="left-navbar-container">
-  <div>
-    <div></div>
-    <p>TEST</p>
-  </div>
-  <div>
-    <div></div>
-    <p>TEST</p>
-  </div>
-  <div>
-    <div></div>
-    <p>TEST</p>
-  </div>
-  <div>
-    <div></div>
-    <p>TEST</p>
-  </div>
+  @for (section of sections(); track section) {
+    <div (click)="onCellClick(section)">
+      <div></div>
+      <p>{{ section }}</p>
+    </div>
+  }
 </div>
+<ng-content></ng-content>

@@ -8,7 +8,7 @@ describe('HomepageComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [HomepageComponent]
+      imports: [HomepageComponent],
     });
     fixture = TestBed.createComponent(HomepageComponent);
     component = fixture.componentInstance;
