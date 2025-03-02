@@ -12,11 +12,6 @@ export class NavbarLeftComponent {
 
   constructor(private scroller: ViewportScroller) {}
 
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll(event: any) {
-    console.log(window.scrollY);
-  }
-
   onCellClick(anchor: string) {
     console.log(anchor);
 

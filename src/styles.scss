@@ -6,9 +6,13 @@
   background-color: #bf8770;
 }
 
-html {
+.scroll-wrapper {
+  overflow: auto;
+  height: 100%;
   scroll-behavior: smooth;
 }
+
+
 
 body {
   margin: 0;

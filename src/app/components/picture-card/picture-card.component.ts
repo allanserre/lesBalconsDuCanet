@@ -12,4 +12,5 @@ export class PictureCardComponent {
   readonly color = input('white');
   readonly maxHeight = input('500');
   readonly maxWidth = input('1000');
+
 }

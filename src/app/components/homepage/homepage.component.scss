@@ -9,9 +9,23 @@ $space-between-section: 20px;
 }
 
 .main-bc {
-  overflow: hidden;
   position: relative;
   width: 100%;
+}
+
+.side-img-container-mobile {
+  padding: $space-between-section 20px;
+
+  .picture-section {
+    margin-bottom: $space-between-section;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    .centered-picture {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 .side-img-container {

@@ -1,29 +1,35 @@
-import { ViewportScroller } from '@angular/common';
-import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
+import {NgClass, NgTemplateOutlet, ViewportScroller} from '@angular/common';
+import {AfterViewInit, Component, computed, HostListener, OnInit, signal} from '@angular/core';
+import {DeviceDetectorService} from "ngx-device-detector";
+import {ScreenDependentComponent} from "../../screen-dependent/screen-dependent.component";
+import {ScrollService} from "../../services/scroll.service";
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   standalone: true,
+  imports: [
+    NgClass,
+    NgTemplateOutlet
+  ]
 })
-export class HeaderComponent {
-  buttonState = false;
-  showHeader = false;
+export class HeaderComponent extends ScreenDependentComponent {
+  buttonState = signal(false);
+  showHeader = computed(() => {
+    return this.scrollValue() > 100;
+  });
+  private scrollValue = signal(0);
 
-  constructor(private scroller: ViewportScroller) {}
 
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll(event: any) {
-    this.showHeader = window.scrollY > 100;
+  constructor(private scroller: ViewportScroller, device : DeviceDetectorService, private scrollService : ScrollService) {
+    super(device);
+    this.scrollService.scrollY.subscribe(scrollY => this.scrollValue.set(scrollY));
   }
+
 
   switchButton(e: Event): void {
     e.preventDefault();
-    this.buttonState = !this.buttonState;
-  }
-
-  get isOpen() {
-    return this.buttonState;
+    this.buttonState.update(value => !value);
   }
 }

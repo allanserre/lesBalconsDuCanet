@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "prettier" : "npx prettier . --write"
+    "prettier": "npx prettier . --write"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +22,7 @@
     "@angular/router": "^19.1.6",
     "@ngx-translate/core": "^15.0.0",
     "@ngx-translate/http-loader": "^8.0.0",
+    "ngx-device-detector": "^9.0.0",
     "prettier": "^3.5.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
