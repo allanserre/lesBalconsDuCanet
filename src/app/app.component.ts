@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, viewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { ScrollService } from './services/scroll.service';
@@ -20,9 +20,11 @@ export class AppComponent {
     gsap.set('.cursor-dot', { scale: 0.1 });
   }
 
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll(event: any) {
-    this.scrollService.setScrollY(window.scrollY);
+  onWindowScroll(event: Event) {
+    const target = event.target as HTMLElement;
+    // console.log(target.getBoundingClientRect());
+
+    this.scrollService.setScrollY(target.scrollTop);
   }
 
   onMouseMove(e: MouseEvent) {

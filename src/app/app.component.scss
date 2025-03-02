@@ -8,6 +8,12 @@
   transform: translate(-50%, -50%) rotate(0deg);
 }
 
+.scroll-wrapper {
+  overflow: scroll;
+  scroll-behavior: smooth;
+  max-height: 100vh;
+}
+
 .cursor-dot {
   mix-blend-mode: difference;
   border-radius: 50px;
@@ -17,9 +23,4 @@
   background-color: white;
   border: solid 1px #fff;
   pointer-events: none;
-}
-
-#content {
-  position: fixed;
-  display: flex;
 }

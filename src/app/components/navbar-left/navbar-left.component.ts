@@ -13,8 +13,6 @@ export class NavbarLeftComponent {
   constructor(private scroller: ViewportScroller) {}
 
   onCellClick(anchor: string) {
-    console.log(anchor);
-
     this.scroller.scrollToAnchor(anchor);
   }
 }

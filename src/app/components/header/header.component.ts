@@ -16,7 +16,7 @@ import { ScrollService } from '../../services/scroll.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   standalone: true,
-  imports: [NgClass, NgTemplateOutlet],
+  imports: [NgClass],
 })
 export class HeaderComponent extends ScreenDependentComponent {
   buttonState = signal(false);

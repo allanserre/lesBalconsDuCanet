@@ -1,6 +1,6 @@
 <div id="content" (mousemove)="onMouseMove($event)">
   <app-header></app-header>
-  <div class="scroll-wrapper">
+  <div #scroller (scroll)="onWindowScroll($event)" class="scroll-wrapper">
     <router-outlet> </router-outlet>
     <div class="cursor-dot"></div>
   </div>

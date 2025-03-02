@@ -6,15 +6,10 @@
   background-color: #bf8770;
 }
 
-.scroll-wrapper {
-  overflow: auto;
-  height: 100%;
-  scroll-behavior: smooth;
-}
-
 body {
-  z-index: 1;
+  height: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 p {

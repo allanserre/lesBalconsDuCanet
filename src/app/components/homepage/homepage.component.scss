@@ -39,6 +39,7 @@ $space-between-section: 20px;
 
   .picture-section {
     margin-bottom: $space-between-section;
+    gap: 24px;
     display: flex;
   }
 
@@ -86,6 +87,7 @@ $space-between-section: 20px;
 }
 
 .row-section {
+  flex-wrap: wrap;
   display: flex;
   column-gap: 40px;
 }

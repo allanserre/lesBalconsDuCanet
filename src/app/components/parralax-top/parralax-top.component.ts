@@ -1,4 +1,5 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, computed, HostListener, signal } from '@angular/core';
+import { ScrollService } from '../../services/scroll.service';
 
 @Component({
   selector: 'app-parralax-top',
@@ -7,17 +8,17 @@ import { Component, HostListener } from '@angular/core';
   standalone: true,
 })
 export class ParralaxTopComponent {
-  speed = 30;
-  scaleSpeed = 10;
+  speed = signal(30);
+  scaleSpeed = signal(10);
 
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll() {}
+  transform3D = computed(() => (this.scrollValue() * this.speed()) / 100);
+  scale = computed(() => 1 + (this.scrollValue() * this.scaleSpeed()) / 100000);
 
-  getTransform3D(): number {
-    return (window.scrollY * this.speed) / 100;
-  }
+  scrollValue = signal(0);
 
-  getScale(): number {
-    return 1 + (window.scrollY * this.scaleSpeed) / 100000;
+  constructor(scrollService: ScrollService) {
+    scrollService.scrollY.subscribe((value) => {
+      //   this.scrollValue.set(value);
+    });
   }
 }

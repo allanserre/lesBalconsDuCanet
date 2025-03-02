@@ -1,9 +1,25 @@
-<div class="image-container">
-  <img
-    [style.max-height.px]="maxHeight()"
-    [style.max-width.px]="maxWidth()"
-    [src]="imageLink()"
-    alt=""
-  />
-  <div class="image-title" [style.color]="color()">{{ imageText() }}</div>
-</div>
+@if (parralax()) {
+  <div
+    appViewportObserver
+    (visible)="onComponentVisible($event)"
+    #currentElement
+    class="parallax-container"
+    [style.height.px]="maxHeight()"
+    [style.width.px]="maxWidth()"
+  >
+    <div class="parallax" [style.transform]="transformStyle()">
+      <img [src]="imageLink()" alt="" />
+    </div>
+    <div class="image-title" [style.color]="color()">{{ imageText() }}</div>
+  </div>
+} @else {
+  <div class="image-container">
+    <img
+      [style.max-height.px]="maxHeight()"
+      [style.max-width.px]="maxWidth()"
+      [src]="imageLink()"
+      alt=""
+    />
+    <div class="image-title" [style.color]="color()">{{ imageText() }}</div>
+  </div>
+}
