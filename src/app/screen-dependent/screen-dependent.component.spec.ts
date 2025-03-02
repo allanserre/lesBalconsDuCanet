@@ -8,9 +8,8 @@ describe('ScreenDependentComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ScreenDependentComponent]
-    })
-    .compileComponents();
+      imports: [ScreenDependentComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ScreenDependentComponent);
     component = fixture.componentInstance;

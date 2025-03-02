@@ -1,7 +1,7 @@
 <div class="header-container">
   <div [ngClass]="{ 'top-app-bar': true, 'bar-colored': showHeader() }">
     <div class="title">Les Balcons du Canet</div>
-    @if(!isMobile()){
+    @if (!isMobile()) {
       <div class="button-navbar" [class.button-open]="buttonState()">
         <button
           tabindex="0"
@@ -10,17 +10,17 @@
           (click)="switchButton($event)"
           class="hamb-btn white-theme"
         >
-        <span class="hamb-btn__wr"
-        ><span class="hamb-btn__square -laterals"></span
-        ><span class="hamb-btn__square -laterals"></span
-        ><span class="hamb-btn__square -laterals"></span
-        ><span class="hamb-btn__square -laterals"></span
-        ><span class="hamb-btn__square -middle"></span
-        ><span class="hamb-btn__square -laterals"></span
-        ><span class="hamb-btn__square -laterals"></span
-        ><span class="hamb-btn__square -laterals"></span
-        ><span class="hamb-btn__square -laterals"></span
-        ></span>
+          <span class="hamb-btn__wr"
+            ><span class="hamb-btn__square -laterals"></span
+            ><span class="hamb-btn__square -laterals"></span
+            ><span class="hamb-btn__square -laterals"></span
+            ><span class="hamb-btn__square -laterals"></span
+            ><span class="hamb-btn__square -middle"></span
+            ><span class="hamb-btn__square -laterals"></span
+            ><span class="hamb-btn__square -laterals"></span
+            ><span class="hamb-btn__square -laterals"></span
+            ><span class="hamb-btn__square -laterals"></span
+          ></span>
         </button>
         <div class="text-box" [class.text-open]="buttonState()">
           <p>Menu</p>
@@ -29,6 +29,5 @@
         </div>
       </div>
     }
-
   </div>
 </div>

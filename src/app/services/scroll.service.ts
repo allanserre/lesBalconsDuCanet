@@ -1,16 +1,15 @@
 import { Injectable } from '@angular/core';
-import {BehaviorSubject} from "rxjs";
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ScrollService {
+  scrollY: BehaviorSubject<number> = new BehaviorSubject(0);
 
-  scrollY : BehaviorSubject<number> = new BehaviorSubject(0);
+  constructor() {}
 
-  constructor() { }
-
-  setScrollY(scrollY : number) {
+  setScrollY(scrollY: number) {
     this.scrollY.next(scrollY);
   }
 }

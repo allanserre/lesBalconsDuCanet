@@ -1,22 +1,22 @@
 .cursor-dot {
-    /* needed for target (shared) */
-    top: 50%;
-    left: 10%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
-    transform: translate(-50%, -50%) rotate(0deg);
+  /* needed for target (shared) */
+  top: 50%;
+  left: 10%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  transform: translate(-50%, -50%) rotate(0deg);
 }
 
 .cursor-dot {
-    mix-blend-mode: difference;
-    border-radius: 50px;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border: solid 1px #fff;
-    pointer-events: none;
+  mix-blend-mode: difference;
+  border-radius: 50px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: solid 1px #fff;
+  pointer-events: none;
 }
 
 #content {
